@@ -41,5 +41,4 @@ footer {
 
 footer a {
   color: cornflowerblue;
-  padding-bottom: constant(safe-area-inset-bottom);
 }
