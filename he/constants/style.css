@@ -23,9 +23,9 @@ nav a:last-child {
 main {
   margin: 0;
   padding: 0 12px;
-  color: white;
   padding-right: constant(safe-area-inset-right);
   padding-left: constant(safe-area-inset-left);
+  color: white;
 }
 
 footer {
