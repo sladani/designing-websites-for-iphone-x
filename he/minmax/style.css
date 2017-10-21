@@ -24,8 +24,6 @@ main {
   margin: 0;
   padding: 0 12px;
   color: white;
-  padding-right: constant(safe-area-inset-right);
-  padding-left: constant(safe-area-inset-left);
 }
 
 footer {
@@ -34,7 +32,6 @@ footer {
   right: 0;
   bottom: 0;
   padding: 12px;
-  padding-bottom: constant(safe-area-inset-bottom);
   background: white;
   text-align: center;
 }
@@ -42,4 +39,15 @@ footer {
 footer a {
   color: cornflowerblue;
   text-decoration: none;
+}
+
+@supports(padding: max(0px)) {
+  main {
+    padding-right: max(12px, constant(safe-area-inset-right));
+    padding-left: max(12px, constant(safe-area-inset-left));
+  }
+
+  footer {
+    padding-bottom: max(12px, constant(safe-area-inset-bottom);
+  }
 }
